@@ -10,8 +10,10 @@
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "y"
+            "name": "jason0727"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.1.0"
+    }
 }
