@@ -1,5 +1,5 @@
 {
-    "name": "jason/php-helper",
+    "name": "jason0727/php-helper",
     "description": "a helper tool library",
     "type": "library",
     "autoload": {
