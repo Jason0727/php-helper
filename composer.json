@@ -7,10 +7,11 @@
             "Jason\\PhpHelper\\": "src/"
         }
     },
-    "license": "Apache-2.0",
+    "license": "MIT",
     "authors": [
         {
-            "name": "jason0727"
+            "name": "jason0727",
+            "email": "642405729@qq.com"
         }
     ],
     "require": {
