@@ -3,3 +3,4 @@ vendor
 *.log
 .DS_Store
 composer.lock
+index.php

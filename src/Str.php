@@ -79,4 +79,48 @@ class Str
     {
         return mb_strlen($value);
     }
+
+    /**
+     * 获取指定长度的随机字母数字组合的字符串
+     *
+     * @param int $length
+     * @param int|null $type 1 纯数字 2 纯小写字母 3 纯大写字母 4 数字+小写字母 5 数字+大写字母 6 数字+大小写字母
+     * @return string
+     */
+    public static function random(int $length = 6, int $type = null): string
+    {
+        $n = '0123456789';
+        $a = 'abcdefghijklmnopqrstuvwxyz';
+        $A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        switch ($type) {
+            case 1:
+                $chars = $n;
+                break;
+            case 2:
+                $chars = $a;
+                break;
+            case 3:
+                $chars = $A;
+                break;
+            case 4:
+                $chars = $n . $a;
+                break;
+            case 5:
+                $chars = $n . $A;
+                break;
+            case 6:
+                $chars = $n . $a . $A;
+                break;
+            default:
+                $chars = $n . $a . $A;
+        }
+
+        $str = '';
+        for ($i = 0; $i < $length; $i++) {
+            $str .= $chars[mt_rand(0, strlen($chars) - 1)];
+        }
+
+        return $str;
+    }
 }
